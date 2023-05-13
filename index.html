@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coming Soon</title>
+    <style>
+      /* Center the text */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #232323;
+      }
+
+      /* Style the "Coming Soon" text */
+      h1 {
+        font-size: 10em;
+        font-family: Arial, sans-serif;
+        color: #f6f6f6;
+        text-align: center;
+        margin: 0;
+        animation: pulse 2s infinite;
+      }
+
+      /* Style the "Stay Tuned" text */
+      p {
+        font-size: 2em;
+        font-family: Arial, sans-serif;
+        color: #f6f6f6;
+        text-align: center;
+        margin: 0;
+        animation: slide 2s infinite;
+      }
+
+      /* Add animation for "Coming Soon" text */
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      /* Add animation for "Stay Tuned" text */
+      @keyframes slide {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(20px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      /* Style for "Assessmate.ai" text */
+      .assessmate {
+        font-size: 4em;
+        font-family: Arial, sans-serif;
+        color: #5c3aff;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-shadow: 2px 2px #f8c401;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="assessmate">Assessmate.ai</div>
+    <div>
+      <h1>Coming Soon</h1>
+      <p>Stay Tuned</p>
+    </div>
+  </body>
+</html>
